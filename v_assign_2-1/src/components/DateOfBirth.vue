@@ -90,8 +90,6 @@ export default {
 };
 </script>
 
-
-
 <style scoped>
 #dates {
 	padding: 0;
