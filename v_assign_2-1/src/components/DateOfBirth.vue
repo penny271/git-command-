@@ -37,23 +37,23 @@
 <script>
 // momentというライブラリを使用 "https://momentjs.com/"
 // let moment = require("moment");
-import moment from 'moment';
+import moment from "moment";
 
 export default {
 	data() {
 		return {
 			japaneseEras: [],
 			months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-			year: moment().year() - 30,
-			month: moment().month() + 1,
-			date: moment().date(),
+			year: 1990,
+			month: 1,
+			date: 1,
 		};
 	},
 	mounted() {
-		this.japaneseEras = this.genereate();
+      this.japaneseEras = this.genereate();
 	},
 	methods: {
-      //生年月日欄の西暦と年号を表すメソッド
+		//生年月日欄の西暦と年号を表すメソッド
 		genereate() {
 			const japaneseEras = [];
 			for (let y = 1912; y <= 2020; y++) {

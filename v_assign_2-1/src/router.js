@@ -2,7 +2,6 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 const Age = () => import("./views/Age.vue")
-const Answers = () => import("./views/Answers.vue")
 const Insurance = () => import("./views/Insurance.vue")
 const Consulting = () => import("./views/Consulting.vue")
 
@@ -15,5 +14,5 @@ export default new Router({
    routes: [{
       path: "/", components: {
          default: Age,
-   } }, { path: "/answers", component: Answers }, { path: "/insurance", component: Insurance }, { path: "/consulting", component: Consulting }]
+   } },  { path: "/insurance", component: Insurance }, { path: "/consulting", component: Consulting }]
 })

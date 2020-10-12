@@ -15,8 +15,11 @@
 							type="radio"
 							name="gender"
 							value="男性"
-							checked="checked"
-						/>男性 <input type="radio" name="gender" value="女性" />女性
+							checked=""
+                     id="male"
+                     v-model="gender"
+						/><label for="male">
+                  男性</label> <input type="radio" name="gender" value="女性" id="female" v-model="gender"/><label for="female">女性</label>
 					</p>
 					<p>-生年月日-</p>
 					<DateOfBirth></DateOfBirth>
@@ -43,7 +46,8 @@ export default {
 			year: "1990",
 			month: 1,
 			date: 1,
-			nengoes: [],
+         nengoes: [],
+         gender:'',
 		};
 	},
 	mounted() {
