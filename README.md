@@ -1,1 +1,1 @@
-# vue_assignment_2-1
+# git command確認のためのリポジトリです。
